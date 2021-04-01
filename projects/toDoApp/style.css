@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
+/* font-family: 'Fredoka One', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightRed: #FF8888;
+    --lightGreen: #96FFA0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #6b8e4e;
+}
+
+button {
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: var(--lightGreen);
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.app {
+    color: var(--lightRed);
+}
+
+.buttons-container {
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    border: none;
+}
+
+.toDothings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 90vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solod black;
+    border-radius: 10px;
+    background-color: var(--lightGreen);
+    overflow: scroll;
+}
+
+.toDoItem-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--lightRed);
+
+}
+
+.toDoItemTxt {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.cancel-button {
+    margin-top: 5px;
+}
+
+@media (min-width: 321px) and (orientation: portrait) {
+
+    .wrapper {
+        justify-content: unset;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 29px;
+        margin: 5px 0;
+    }
+
+    h1 {
+        padding: 15px 20px;
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    input {
+        height: 80px;
+        width: 70vw;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .toDothings-container {
+        height: 500px;
+    }
+}
+
+@media (min-width: 481px) and (orientation: portrait) {
+
+    button {
+        padding: 5px 10px;
+        font-size: 50px;
+    }
+
+    .wrapper {
+        justify-content: unset;
+    }
+
+    h1 {
+        padding: 15px 20px;
+        font-size: 90px;
+    }
+
+    input {
+        height: 100px;
+        width: 70vh;
+        font-size: 30px;
+    }
+
+    .toDothings-container {
+        height: 70vh;
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+    
+    button {
+        padding: 20px 35px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    .wrapper {
+        justify-content: unset;
+    }
+    
+    h1 {
+        font-size: 90px;
+        width: 70vw;
+        text-align: center;
+    }
+    
+    .buttons-container {
+        padding: 0px 10px;
+        margin: 10px 0;
+    }
+
+    .add:hover, .delete-all-btn:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    input {
+        height: 100px;
+        width: 65vw;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    
+    .toDothings-container {
+        height: 700px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .fa-trash-alt:hover {
+        color: white;
+    }
+}

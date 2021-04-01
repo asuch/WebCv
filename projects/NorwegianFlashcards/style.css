@@ -1,0 +1,779 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+/* font-family: 'Coiny', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Coiny', cursive;
+}
+
+:root {
+    --blue: #001F58;
+    --red: #E92729;
+    --white: #F7F7F7;
+    --bgc: #303030;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/projects/NorwegianFlashcards/img/norwayBgp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+/* MAIN PAGE */
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0;
+}
+
+.hello-txt {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--white);
+    padding: 0 10px;
+}
+
+.cards-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+
+.lesson-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30vh;
+    width: 30vh;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    ;
+}
+
+.howAreYou {
+    -webkit-filter: opacity(.2);
+            filter: opacity(.2);
+}
+
+.card-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.whoAreYou-photo {
+    background-image: url(/projects/NorwegianFlashcards/img/whoAreU.jpg);
+}
+
+.howAreYou-photo {
+    background-image: url(/projects/NorwegianFlashcards/img/howAreYou.jpg);
+}
+
+.go-back-btn-main {
+    position: fixed;
+    left: 15px;
+    bottom: 5px;
+    font-size: 30px;
+}
+
+/* SUBJECT PAGE */
+
+.subjectWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    background-image: url(/projects/NorwegianFlashcards/img/subbgc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lesson-name-container {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    color: var(--white);
+    background-image: url(/projects/NorwegianFlashcards/img/lessonNameBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lesson-name-txt {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+}
+
+.card-container {
+    position: relative;
+    width: 70%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11 {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 70vw;
+    height: 100%;
+    margin: 0px 0;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card1 .front,
+.card2 .front,
+.card3 .front,
+.card4 .front,
+.card5 .front,
+.card6 .front,
+.card7 .front,
+.card8 .front,
+.card9 .front,
+.card10 .front,
+.card11 .front {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #001f58;
+    background-image: url(/projects/NorwegianFlashcards/img/cardbg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.flag-pl {
+    background-image: url(/projects/NorwegianFlashcards/img/poland.svg);
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.content-pl {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 20px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.card-number {
+    position: absolute;
+    bottom: 5px;
+}
+
+.card1 .back,
+.card2 .back,
+.card3 .back,
+.card4 .back,
+.card5 .back,
+.card6 .back,
+.card7 .back,
+.card8 .back,
+.card9 .back,
+.card10 .back,
+.card11 .back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #001f58;
+    background-image: url(/projects/NorwegianFlashcards/img/cardbg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.flag-no {
+    background-image: url(/projects/NorwegianFlashcards/img/norway.svg);
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.content-no {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 20px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.info-container {
+    position: absolute;
+    width: 80%;
+    bottom: 30px;
+    padding-top: 7px;
+    border-top: 1px solid var(--white);
+}
+
+.info {
+    text-align: center;
+    font-size: 12px;
+}
+
+.btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    bottom: 13px;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: var(--white);
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    margin-top: 50px;
+    /* background-color: #777; */
+
+    color: var(--white);
+    font-size: 12px;
+}
+
+.back-container {
+    color: var(--white);
+    font-size: 25px;
+}
+
+@media (min-width: 370px) and (orientation: portrait) {
+    
+    .lesson-card {
+        font-size: 25px;
+    }
+    
+    .card-photo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* SUBJECT PAGE */
+    
+    .lesson-name-txt {
+        font-size: 25px;
+    }
+    
+    .flag-pl {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .content-pl {
+        font-size: 30px;
+    }
+    
+    .card-number {
+        font-size: 20px;
+    }
+
+    .flag-no {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .content-no {
+        font-size: 30px;
+    }
+    
+    .info {
+        font-size: 15px;
+    }
+
+    footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    
+        margin-top: 50px;
+        /* background-color: #777; */
+    
+        color: var(--white);
+        font-size: 15px;
+    }
+    
+    .back-container {
+        font-size: 30px;
+    }
+
+    .go-back-btn-main {
+        position: fixed;
+        left: 15px;
+        bottom: 5px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .hello-txt {
+        font-size: 40px;
+    }
+    
+    .lesson-card {
+        margin: 30px 0;
+        border-radius: 20px;
+    }
+    
+    .card-photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+    .lesson-card-txt {
+        font-size: 30px;
+    }
+    
+    /* SUBJECT PAGE */
+
+    .lesson-name-txt {
+        font-size: 50px;
+    }
+    
+    .card-container {
+        position: relative;
+        width: 60%;
+        height: 70vh;
+        border-radius: 20px;
+    }
+    
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10,
+    .card11 {
+        width: 60vw;
+        border-radius: 20px;
+    }
+    
+    .card1 .front,
+    .card2 .front,
+    .card3 .front,
+    .card4 .front,
+    .card5 .front,
+    .card6 .front,
+    .card7 .front,
+    .card8 .front,
+    .card9 .front,
+    .card10 .front,
+    .card11 .front {
+        border-radius: 20px;
+    }
+    
+    .flag-pl {
+        width: 90px;
+        height: 90px;
+        margin-top: 30px;
+    }
+    
+    .content-pl {
+        padding: 0 15px;
+        font-size: 40px;
+    }
+    
+    .card1 .back,
+    .card2 .back,
+    .card3 .back,
+    .card4 .back,
+    .card5 .back,
+    .card6 .back,
+    .card7 .back,
+    .card8 .back,
+    .card9 .back,
+    .card10 .back,
+    .card11 .back {
+        border-radius: 20px;
+    }
+    
+    .flag-no {
+        width: 90px;
+        height: 90px;
+        margin-top: 30px;
+    }
+    
+    .content-no {
+        padding: 0 15px;
+        font-size: 40px;
+    }
+    
+    .info-container {
+        border-top: 2px solid var(--white);
+    }
+    
+    .info {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .swiper-button-next {
+        margin: 0 50px;
+    }
+
+    .swiper-button-prev {
+        margin: 0 50px;
+    }
+    
+    footer {    
+        margin-top: 50px;
+        /* background-color: #777; */
+    
+        color: var(--white);
+        font-size: 20px;
+        width: 70%;
+    }
+    
+    .back-container {
+        font-size: 45px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        margin-right: 25px;
+    }
+
+    .back-container:hover {
+        font-size: 40px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    
+    /* MAIN PAGE */
+    
+    
+    .hello-txt {
+        font-size: 40px;
+    }
+    
+    .lesson-card {
+        height: 40vh;
+        width: 40vh;
+        margin: 20px 0;
+        border-radius: 15px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+    }
+
+    .lesson-card:hover {
+        height: 45vh;
+        width: 45vh;
+    }
+
+    .lesson-card:hover > .card-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .lesson-card:hover > .lesson-card-txt {
+        font-size: 25px;
+    }
+    
+    
+    .card-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        margin: 15px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+
+    .lesson-card-txt {
+        font-size: 20px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+    }
+    
+    /* SUBJECT PAGE */
+
+    .lesson-name-txt {
+        font-size: 30px;
+    }
+    
+    .card-container {
+        position: relative;
+        width: 25%;
+        height: 70vh;
+        border-radius: 20px;
+    }
+    
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8,
+    .card9,
+    .card10,
+    .card11 {
+        width: 25vw;
+        border-radius: 20px;
+    }
+    
+    .card1 .front,
+    .card2 .front,
+    .card3 .front,
+    .card4 .front,
+    .card5 .front,
+    .card6 .front,
+    .card7 .front,
+    .card8 .front,
+    .card9 .front,
+    .card10 .front,
+    .card11 .front {
+        border-radius: 20px;
+    }
+    
+    .flag-pl {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+    }
+    
+    .content-pl {
+        padding: 0 15px;
+        font-size: 30px;
+    }
+    
+    .card1 .back,
+    .card2 .back,
+    .card3 .back,
+    .card4 .back,
+    .card5 .back,
+    .card6 .back,
+    .card7 .back,
+    .card8 .back,
+    .card9 .back,
+    .card10 .back,
+    .card11 .back {
+        border-radius: 10px;
+    }
+    
+    .flag-no {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+    }
+    
+    .content-no {
+        padding: 0 15px;
+        font-size: 30px;
+    }
+    
+    .info-container {
+        position: absolute;
+        width: 80%;
+        bottom: 30px;
+        padding-top: 7px;
+        border-top: 1px solid var(--white);
+    }
+    
+    .info {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .swiper-button-next {
+        margin: 0 200px;
+    }
+
+    .swiper-button-prev {
+        margin: 0 200px;
+    }
+    
+    footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    
+        margin-top: 10px;
+        /* background-color: #777; */
+    
+        color: var(--white);
+        font-size: 20px;
+    }
+    
+    .back-container {
+        font-size: 35px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        margin-right: 10px;
+    }
+
+    .back-container:hover {
+        font-size: 40px;
+    }
+
+    .go-back-btn-main {
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        font-size: 50px;
+    }
+}
