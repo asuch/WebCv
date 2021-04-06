@@ -760,12 +760,12 @@ footer p {
     .header-icon {
         position: absolute;
         display: block;
-        font-size: 6rem;
+        font-size: 4rem;
         color: var(--secondary);
     }
 
     .fa-lightbulb {
-        top: 10%;
+        top: 5%;
     }
 
     .fa-tasks {
